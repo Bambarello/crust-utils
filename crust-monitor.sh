@@ -24,7 +24,7 @@ function check_number() {
 
 function restart_daemon() {
         log "systemctl restart $service_name"
-        crust reload
+        sudo crust reload chain
 }
 
 function get_metrics() {
